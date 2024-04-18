@@ -1,0 +1,21 @@
+<!DOCtype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tugas Praktikum Modul 3 - OnOffline</title>
+	</head>
+	<body onoffline="onOffline()" ononline="onOnline()">
+		<div id="status">
+			Selamat datang!
+		</div>
+		<script>
+			function onOffline() {
+				document.getElementById("status").innerHTML = "Uh oh! Sepertinya anda terputus dari hubungan internet.";
+			}
+			function onOnline() {
+				document.getElementById("status").innerHTML = "Selamat datang!";
+			}
+		</script>
+	</body>
+</html>

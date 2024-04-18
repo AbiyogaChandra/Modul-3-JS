@@ -1,0 +1,22 @@
+<!DOCtype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tugas Praktikum Modul 3</title>
+	</head>
+	<body>
+		<div id="status" onmousedown="onMouseDown()" onmouseup="onMouseUp()">
+			Tahan tombol mouse di sini!
+		</div>
+		<script>
+			function onMouseDown() {
+				document.getElementById("status").innerHTML = "Jangan lepas tombol mouse!";
+			}
+			function onMouseUp() {
+				document.getElementById("status").innerHTML = "Tahan tombol mouse di sini!";
+				alert('Gimana sih?');
+			}
+		</script>
+	</body>
+</html>
